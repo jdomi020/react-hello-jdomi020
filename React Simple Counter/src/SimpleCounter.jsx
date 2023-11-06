@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function SimpleCounter(props) {
 
     return (
@@ -18,5 +20,12 @@ function SimpleCounter(props) {
     )
   }
   
+  SimpleCounter.propTypes = {
+    thousandsDigit: PropTypes.number,
+    hundredsDigit: PropTypes.number,
+    tensDigit: PropTypes.number,
+    onesDigit: PropTypes.number
+  }
+
   export default SimpleCounter
   
