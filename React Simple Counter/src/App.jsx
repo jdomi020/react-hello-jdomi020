@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react'
 import SimpleCounter from "./SimpleCounter"
+import calculateSeconds from "./lib/time.js"
 
 
 function App() {
@@ -23,9 +24,6 @@ function App() {
   // an empty dependancy array, will just run once 
   // array with a state variable: will only update when the state changes like with the setInterval declared which made it run every second
 
-  function calculateSeconds(aCounter, placeValue) {
-    return Math.floor(aCounter / placeValue) % 10
-  }
 
   return (
     <>
